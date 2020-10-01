@@ -5,13 +5,15 @@
   "files": [
     "lib/**"
   ],
-  "main": "index.js",
+  "main": "./index.js",
   "bin": "./lib/cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "format": "prettier --write \"src/**\"",
-    "lint": "tslint -p tsconfig.json"
+    "lint": "tslint -p tsconfig.json",
+    "install": "node ./lib/lifecycle/install.js",
+    "uninstall": "node ./lib/lifecycle/unistall.js"
   },
   "repository": {
     "type": "git",
